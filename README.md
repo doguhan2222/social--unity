@@ -19,3 +19,6 @@
 -Fotoğraf yükleme
 
 -Ana sayfada tüm kullanıcıların bilgileri ile birlikte fotoğraflarının gösterilmesi
+
+------------------
+-Projeyi indirip test etmek isterseniz uygulamayı açmadan önce VPN kullanmalısınız.Bunun nedeni ücretsiz kullandığım hosting firmasının Türkiye'de kullanılamamasıdır.
