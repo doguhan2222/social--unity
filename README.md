@@ -6,6 +6,8 @@
 
 -Kotlin'e geçiş yaptığım için geliştirmeyi bıraktım.
 
+----------------
+
 -Şuanki özellikleri
 
 -Kayıt olma
