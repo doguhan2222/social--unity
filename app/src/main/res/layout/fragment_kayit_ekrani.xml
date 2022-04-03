@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KayitEkraniFragment">
+
+    <TextView
+        android:id="@+id/kayitEkraniBaslik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="center"
+        android:text="@string/baslik"
+        android:textColor="#FF0000"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/kayitEkraniAciklama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/kayitEkraniAciklama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/kayit_ekrani_text1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/kayitEkraniEpostaEditText"
+        app:layout_constraintEnd_toEndOf="@+id/kayitEkraniBaslik"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/kayitEkraniBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/kayitEkraniBaslik" />
+
+    <EditText
+        android:id="@+id/kayitEkraniEpostaEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_style"
+        android:hint="@string/kayit_ekrani_hint1"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/kayitEkraniAdSoyadEditText"
+        app:layout_constraintEnd_toEndOf="@+id/kayitEkraniAciklama"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/kayitEkraniAciklama"
+        app:layout_constraintTop_toBottomOf="@+id/kayitEkraniAciklama" />
+
+    <EditText
+        android:id="@+id/kayitEkraniAdSoyadEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_style"
+        android:hint="@string/kayit_ekrani_hint2"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/kayitEkraniKadiEditText"
+        app:layout_constraintEnd_toEndOf="@+id/kayitEkraniEpostaEditText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/kayitEkraniEpostaEditText"
+        app:layout_constraintTop_toBottomOf="@+id/kayitEkraniEpostaEditText" />
+
+    <EditText
+        android:id="@+id/kayitEkraniKadiEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_style"
+        android:hint="@string/kayit_ekrani_hint3"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/kayitEkraniSifreEditText"
+        app:layout_constraintEnd_toEndOf="@+id/kayitEkraniAdSoyadEditText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/kayitEkraniAdSoyadEditText"
+        app:layout_constraintTop_toBottomOf="@+id/kayitEkraniAdSoyadEditText" />
+
+    <EditText
+        android:id="@+id/kayitEkraniSifreEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_style"
+        android:hint="@string/kayit_ekrani_hint4"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/kayitEkraniKayitTamamlaButon"
+        app:layout_constraintEnd_toEndOf="@+id/kayitEkraniKadiEditText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/kayitEkraniKadiEditText"
+        app:layout_constraintTop_toBottomOf="@+id/kayitEkraniKadiEditText" />
+
+    <Button
+        android:id="@+id/kayitEkraniKayitTamamlaButon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:text="@string/kayit_ekrani_buton_text1"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/kayitEkraniHesapVarsaGirText"
+        app:layout_constraintEnd_toEndOf="@+id/kayitEkraniSifreEditText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/kayitEkraniSifreEditText"
+        app:layout_constraintTop_toBottomOf="@+id/kayitEkraniSifreEditText" />
+
+    <TextView
+        android:id="@+id/kayitEkraniHesapVarsaGirText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/kayit_ekrani_text2"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/kayitEkraniKayitTamamlaButon"
+        app:layout_constraintStart_toStartOf="@+id/kayitEkraniKayitTamamlaButon"
+        app:layout_constraintTop_toBottomOf="@+id/kayitEkraniKayitTamamlaButon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

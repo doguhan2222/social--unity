@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Social Unity</string>
+    <string name="baslik">𝓢𝓸𝓬𝓲𝓪𝓵 𝓤𝓷𝓲𝓽𝔂</string>
+    <string name="giris_ekrani_hint1">Kullanıcı adı </string>
+    <string name="giris_ekrani_hint2">Şifre</string>
+    <string name="giris_ekrani_buton_text1">Giriş Yap</string>
+    <string name="giris_ekrani_text2">Şifreni mi unuttun ?</string>
+    <string name="giris_ekrani_text3">Hemen kaydol</string>
+
+    <string name="kayit_ekrani_text1">Arkadaşlarına doya doya anılarını paylaşmak için şimdi kaydol.</string>
+    <string name="kayit_ekrani_hint1">E-postanı gir</string>
+    <string name="kayit_ekrani_hint2">Adını ve soyadını gir</string>
+    <string name="kayit_ekrani_hint3">Kullanıcı adını gir</string>
+    <string name="kayit_ekrani_hint4">Şifreni gir</string>
+    <string name="kayit_ekrani_buton_text1">Kaydını tamamla</string>
+    <string name="kayit_ekrani_text2">Hesabın varsa şimdi giriş yap</string>
+
+    <string name="kayit_onay_ekrani_hint1">Onay kodunu gir.</string>
+    <string name="kayit_onay_ekrani_text1">Aktifleştir</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GirisEkraniFragment">
+
+    <TextView
+        android:id="@+id/girisEkraniBaslik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="center"
+        android:text="@string/baslik"
+        android:textColor="#FF0000"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/girisEkraniKadiEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <EditText
+        android:id="@+id/girisEkraniKadiEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edittext_style"
+        android:hint="@string/giris_ekrani_hint1"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/girisEkraniSifreEditText"
+        app:layout_constraintEnd_toEndOf="@+id/girisEkraniBaslik"
+        app:layout_constraintStart_toStartOf="@+id/girisEkraniBaslik"
+        app:layout_constraintTop_toBottomOf="@+id/girisEkraniBaslik" />
+
+    <EditText
+        android:id="@+id/girisEkraniSifreEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_style"
+        android:hint="@string/giris_ekrani_hint2"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/girisEkraniGirisYapButon"
+        app:layout_constraintEnd_toEndOf="@+id/girisEkraniKadiEditText"
+        app:layout_constraintStart_toStartOf="@+id/girisEkraniKadiEditText"
+        app:layout_constraintTop_toBottomOf="@+id/girisEkraniKadiEditText" />
+
+    <Button
+        android:id="@+id/girisEkraniGirisYapButon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:background="@drawable/button_style"
+        android:text="@string/giris_ekrani_buton_text1"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/girisEkraniSifremiUnuttumText"
+        app:layout_constraintEnd_toEndOf="@+id/girisEkraniSifreEditText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/girisEkraniSifreEditText"
+        app:layout_constraintTop_toBottomOf="@+id/girisEkraniSifreEditText" />
+
+    <TextView
+        android:id="@+id/girisEkraniSifremiUnuttumText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="@string/giris_ekrani_text2"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/girisEkraniKaydolText"
+        app:layout_constraintEnd_toEndOf="@+id/girisEkraniGirisYapButon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/girisEkraniGirisYapButon"
+        app:layout_constraintTop_toBottomOf="@+id/girisEkraniGirisYapButon" />
+
+    <TextView
+        android:id="@+id/girisEkraniKaydolText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/giris_ekrani_text3"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/girisEkraniSifremiUnuttumText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/girisEkraniSifremiUnuttumText"
+        app:layout_constraintTop_toBottomOf="@+id/girisEkraniSifremiUnuttumText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

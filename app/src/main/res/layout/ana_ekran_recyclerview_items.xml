@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/anaEkranGonderiProfilResim"
+            android:layout_width="50dp"
+            android:scaleType="fitXY"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/anaEkranGonderiKullaniciId"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/anaEkranGonderiResim"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:layout_weight="3" />
+
+
+</LinearLayout>
